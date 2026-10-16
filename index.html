@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f5fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #243b55;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background: #141e30;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #61dafb;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 25px auto;
+            padding: 15px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        section, article, aside {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px #ccc;
+        }
+
+        h2 {
+            color: #243b55;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .contact {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background: #243b55;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 25px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Shaik Nagur Bee</h1>
+        <p>B.Tech Computer Science Engineering Student</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+        <div class="grid-container">
+
+            <section id="about">
+                <h2>About Me</h2>
+                <p>
+                    I am a Computer Science Engineering student
+                    interested in web development, programming,
+                    and learning new technologies.
+                </p>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <p><strong>Degree:</strong> B.Tech CSE</p>
+                <p><strong>College:</strong> KL University</p>
+                <p><strong>Year:</strong> II Year</p>
+            </section>
+
+            <section id="skills">
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>Data Structures</li>
+                </ul>
+            </section>
+
+            <section id="projects">
+                <h2>My Projects</h2>
+                <article>
+                    <h3>FoodBridge</h3>
+                    <p>A website concept for connecting food donors
+                       with people in need and reducing food waste.</p>
+                </article>
+                <article>
+                    <h3>Student Portfolio</h3>
+                    <p>A personal website created using HTML5
+                       and CSS Grid.</p>
+                </article>
+            </section>
+
+            <aside>
+                <h2>Achievements</h2>
+                <ul>
+                    <li>Completed programming exercises</li>
+                    <li>Developed mini projects</li>
+                    <li>Learning web technologies</li>
+                </ul>
+            </aside>
+
+            <section id="contact" class="contact">
+                <h2>Contact Me</h2>
+                <p>Email: student@example.com</p>
+                <p>Location: Andhra Pradesh, India</p>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
